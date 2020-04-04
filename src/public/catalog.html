@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/7c69a4a837.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Catalog</title>
+</head>
+
+<body>
+<div id="app">
+    <header class="header">
+        <div class="container headerFlex">
+            <div class="headerLeft">
+                <a href="index.html" class="logo"><img class="logoImg" src="img/logo.png" alt="">BRAN<span
+                        class="logoLetter">D</span></a>
+<!--                <form action="#" class="headerForm">-->
+<!--                    <div class="browseFlex">-->
+<!--                        <div class="browse arrowLeft">Browse</div>-->
+<!--                        <div class="drop">-->
+<!--                            <div class="dropFlex">-->
+<!--                                <h3 class="dropH3">Women</h3>-->
+<!--                                <ul class="dropUl browsePadding">-->
+<!--                                    <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>-->
+<!--                                    <li class="dropList"><a href="#" class="dropLink">Tops</a></li>-->
+<!--                                    <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>-->
+<!--                                    <li class="dropList"><a href="#" class="dropLink">Jackets/Coats</a></li>-->
+<!--                                    <li class="dropList"><a href="#" class="dropLink">Blazers</a></li>-->
+<!--                                    <li class="dropList"><a href="#" class="dropLink">Denim</a></li>-->
+<!--                                    <li class="dropList"><a href="#" class="dropLink">Leggings/Pants</a></li>-->
+<!--                                    <li class="dropList"><a href="#" class="dropLink">Skirts/Shorts</a></li>-->
+<!--                                    <li class="dropList"><a href="#" class="dropLink">Accessories </a></li>-->
+<!--                                </ul>-->
+<!--                                <h3 class="dropH3">Men</h3>-->
+<!--                                <ul class="dropUl">-->
+<!--                                    <li class="dropList"><a href="#" class="dropLink">Tees/Tank tops</a></li>-->
+<!--                                    <li class="dropList"><a href="#" class="dropLink">Shirts/Polos</a></li>-->
+<!--                                    <li class="dropList"><a href="#" class="dropLink">Sweaters</a></li>-->
+<!--                                    <li class="dropList"><a href="#" class="dropLink">Sweatshirts/Hoodies</a></li>-->
+<!--                                    <li class="dropList"><a href="#" class="dropLink">Blazers</a></li>-->
+<!--                                    <li class="dropList"><a href="#" class="dropLink">Jackets/vests</a></li>-->
+
+<!--                                </ul>-->
+<!--                            </div>-->
+
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <input type="text" placeholder="Search for Item..." class="headerInput">-->
+<!--                    <button type="submit" class="headerSearch"><i class="fas fa-search"></i></button>-->
+<!--                </form>-->
+                <search></search>
+
+            </div>
+            <div class="headerRight">
+<!--                <div class="cartBlock">-->
+<!--                    <a href="#" class="cartLink"><img src="img/cart.svg" alt="" class="headerCartImg"></a>-->
+<!--                    <div class="dropCartFlex">-->
+<!--                        <div class="dCartItem">-->
+<!--                            <a href="#"><img src="img/cartItem1.jpg" alt=""></a>-->
+<!--                            <div class="dCartItemText">-->
+<!--                                <a href="#" class="dCartLink">Rebox Zane</a>-->
+<!--                                <p><i class="fa fa-lg fa-star"></i><i class="fa fa-lg fa-star"></i><i-->
+<!--                                        class="fa fa-lg fa-star"></i><i-->
+<!--                                        class="fa fa-lg fa-star"></i><i class="fas fa-lg fa-star-half-alt"></i></p>-->
+<!--                                <p class="dCartItemP">1 x $250</p>-->
+<!--                            </div>-->
+<!--                            <a href="#" class="dCartDelete"><i class="fas fa-times-circle"></i></a>-->
+
+<!--                        </div>-->
+<!--                        <div class="dCartItem">-->
+<!--                            <a href="#"><img src="img/cartItem2.jpg" alt=""></a>-->
+<!--                            <div class="dCartItemText">-->
+<!--                                <a href="#" class="dCartLink">Rebox Zane</a>-->
+<!--                                <p><i class="fa fa-lg fa-star"></i><i class="fa fa-lg fa-star"></i><i-->
+<!--                                        class="fa fa-lg fa-star"></i><i-->
+<!--                                        class="fa fa-lg fa-star"></i><i class="fas fa-lg fa-star-half-alt"></i></p>-->
+<!--                                <p class="dCartItemP">1 x $250</p>-->
+<!--                            </div>-->
+<!--                            <a href="#" class="dCartDelete"><i class="fas fa-times-circle"></i></a>-->
+<!--                        </div>-->
+<!--                        <div class="dCartTotal">-->
+<!--                            <h4 class="dTotalH4">TOTAL</h4>-->
+<!--                            <h4 class="dTotalH4">$500.00</h4>-->
+<!--                        </div>-->
+<!--                        <a href="#" class="dCartButton">Checkout</a>-->
+<!--                        <a href="#" class="dCartButton">Go to cart</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+				<cart ref="cart"></cart>
+                <a href="#" class="button arrowRight">My Account</a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul class="menu">
+                <li class="menuList"><a href="index.html" class="menuLink">Home</a>
+                    <div class="drop">
+                        <div class="dropFlex">
+                            <h3 class="dropH3">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Jackets/Coats</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Blazers</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Denim</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Leggings/Pants</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Skirts/Shorts</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Accessories </a></li>
+                            </ul>
+                        </div>
+                        <div class="dropFlex">
+                            <h3 class="dropH3">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Jackets/Coats</a></li>
+                            </ul>
+                            <h3 class="dropH3 dropPadding">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropFlex">
+                            <h3 class="dropH3">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Jackets/Coats</a></li>
+
+                            </ul>
+                            <a href="#" class="superSaleImg">
+                                <div class="superSaleText">
+                                    <h2 class="superSaleH2">Super sale!</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menuList"><a href="catalog.html" class="menuLink">Man</a>
+                    <div class="drop">
+                        <div class="dropFlex">
+                            <h3 class="dropH3">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Jackets/Coats</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Blazers</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Denim</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Leggings/Pants</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Skirts/Shorts</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Accessories </a></li>
+                            </ul>
+                        </div>
+                        <div class="dropFlex">
+                            <h3 class="dropH3">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Jackets/Coats</a></li>
+                            </ul>
+                            <h3 class="dropH3 dropPadding">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropFlex">
+                            <h3 class="dropH3">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Jackets/Coats</a></li>
+
+                            </ul>
+                            <a href="#" class="superSaleImg">
+                                <div class="superSaleText">
+                                    <h2 class="superSaleH2">Super sale!</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menuList">
+                    <a href="#" class="menuLink">Women</a>
+                    <div class="drop dropMiddle">
+                        <div class="dropFlex">
+                            <h3 class="dropH3">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Jackets/Coats</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Blazers</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Denim</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Leggings/Pants</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Skirts/Shorts</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Accessories </a></li>
+                            </ul>
+                        </div>
+                        <div class="dropFlex">
+                            <h3 class="dropH3">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Jackets/Coats</a></li>
+                            </ul>
+                            <h3 class="dropH3 dropPadding">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropFlex">
+                            <h3 class="dropH3">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Jackets/Coats</a></li>
+
+                            </ul>
+                            <a href="#" class="superSaleImg">
+                                <div class="superSaleText">
+                                    <h2 class="superSaleH2">Super sale!</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menuList"><a href="#" class="menuLink">Kids</a>
+                    <div class="drop dropMiddle">
+                        <div class="dropFlex">
+                            <h3 class="dropH3">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Jackets/Coats</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Blazers</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Denim</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Leggings/Pants</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Skirts/Shorts</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Accessories </a></li>
+                            </ul>
+                        </div>
+                        <div class="dropFlex">
+                            <h3 class="dropH3">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Jackets/Coats</a></li>
+                            </ul>
+                            <h3 class="dropH3 dropPadding">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropFlex">
+                            <h3 class="dropH3">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Jackets/Coats</a></li>
+
+                            </ul>
+                            <a href="#" class="superSaleImg">
+                                <div class="superSaleText">
+                                    <h2 class="superSaleH2">Super sale!</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menuList"><a href="#" class="menuLink">Accoseriese</a>
+                    <div class="drop dropMiddle">
+                        <div class="dropFlex">
+                            <h3 class="dropH3">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Jackets/Coats</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Blazers</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Denim</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Leggings/Pants</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Skirts/Shorts</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Accessories </a></li>
+                            </ul>
+                        </div>
+                        <div class="dropFlex">
+                            <h3 class="dropH3">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Jackets/Coats</a></li>
+                            </ul>
+                            <h3 class="dropH3 dropPadding">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropFlex">
+                            <h3 class="dropH3">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Jackets/Coats</a></li>
+
+                            </ul>
+                            <a href="#" class="superSaleImg">
+                                <div class="superSaleText">
+                                    <h2 class="superSaleH2">Super sale!</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menuList"><a href="#" class="menuLink">Featured</a>
+                    <div class="drop dropLast">
+                        <div class="dropFlex">
+                            <h3 class="dropH3">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Jackets/Coats</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Blazers</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Denim</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Leggings/Pants</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Skirts/Shorts</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Accessories </a></li>
+                            </ul>
+                        </div>
+                        <div class="dropFlex">
+                            <h3 class="dropH3">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Jackets/Coats</a></li>
+                            </ul>
+                            <h3 class="dropH3 dropPadding">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropFlex">
+                            <h3 class="dropH3">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Jackets/Coats</a></li>
+
+                            </ul>
+                            <a href="#" class="superSaleImg">
+                                <div class="superSaleText">
+                                    <h2 class="superSaleH2">Super sale!</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menuList"><a href="#" class="menuLink">Hot Deals</a>
+                    <div class="drop dropLast">
+                        <div class="dropFlex">
+                            <h3 class="dropH3">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Jackets/Coats</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Blazers</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Denim</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Leggings/Pants</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Skirts/Shorts</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Accessories </a></li>
+                            </ul>
+                        </div>
+                        <div class="dropFlex">
+                            <h3 class="dropH3">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Jackets/Coats</a></li>
+                            </ul>
+                            <h3 class="dropH3 dropPadding">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropFlex">
+                            <h3 class="dropH3">Women</h3>
+                            <ul class="dropUl">
+                                <li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Tops</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
+                                <li class="dropList"><a href="#" class="dropLink">Jackets/Coats</a></li>
+
+                            </ul>
+                            <a href="#" class="superSaleImg">
+                                <div class="superSaleText">
+                                    <h2 class="superSaleH2">Super sale!</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="newArrivals">
+        <div class="newArrivalsFlex container">
+            <h1 class="nArrivalsH1">New Arrivals</h1>
+            <nav>
+                <ul class="menu">
+                    <li class="nArrivalsList"><a href="index.html" class="nArrivalsLink">Home</a>/</li>
+                    <li class="nArrivalsList"><a href="" class="nArrivalsLink">Men</a>/</li>
+                    <li class="nArrivalsList"><a href="" class="nArrivalsLink">New Arrivals</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </section>
+
+    <main class="catalog container">
+        <div class="catalogFilter">
+            <div class="filter">
+                <div class="filterMain">
+                    <h4 class="filterMainH4">Category</h4>
+                    <i class="fas fa-sort-up"></i>
+                    <i class="fas fa-sort-down"></i>
+                </div>
+                <div class="filterSub">
+                    <ul class="filterSubMenu">
+                        <li class="filterList"><a href="#" class="filterLink">Accessories</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Bags</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Denim</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Hoodies & Sweatshirts</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Jackets & Coats</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Pants</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Polos</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Shirts</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Shoes</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Shorts</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Sweaters & Knits</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">T-Shirts</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Tanks</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="filter">
+                <div class="filterMain">
+                    <h4 class="filterMainH4">BRAND</h4>
+                    <i class="fas fa-sort-up"></i>
+                    <i class="fas fa-sort-down"></i>
+                </div>
+                <div class="filterSub">
+                    <ul class="filterSubMenu">
+                        <li class="filterList"><a href="#" class="filterLink">Accessories</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Bags</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Denim</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Hoodies & Sweatshirts</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Jackets & Coats</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Pants</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Polos</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Shirts</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Shoes</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Shorts</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Sweaters & Knits</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">T-Shirts</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Tanks</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="filter">
+                <div class="filterMain">
+                    <h4 class="filterMainH4">dESIGNER</h4>
+                    <i class="fas fa-sort-up"></i>
+                    <i class="fas fa-sort-down"></i>
+                </div>
+                <div class="filterSub">
+                    <ul class="filterSubMenu">
+                        <li class="filterList"><a href="#" class="filterLink">Accessories</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Bags</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Denim</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Hoodies & Sweatshirts</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Jackets & Coats</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Pants</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Polos</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Shirts</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Shoes</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Shorts</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Sweaters & Knits</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">T-Shirts</a></li>
+                        <li class="filterList"><a href="#" class="filterLink">Tanks</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="catalogBlock">
+            <div class="catalogSearch">
+                <div class="searchBlock">
+                    <h4 class="searchH4">Trending now</h4>
+                    <p class="searchP">
+                        <a href="#" class="searchLink">Bohemian</a>
+                        <a href="#" class="searchLink">Floral</a>
+                        <a href="#" class="searchLink">Lace</a>
+                    </p>
+                    <p class="searchP">
+                        <a href="#" class="searchLink">Floral</a>
+                        <a href="#" class="searchLink">Lace</a>
+                        <a href="#" class="searchLink">Bohemian</a>
+                    </p>
+                </div>
+                <div class="searchBlockCheck">
+                    <h4 class="searchH4">Size </h4>
+                    <div class="check">
+                        <div class="checkBlock">
+                            <input type="checkbox" class="checkBox" name="XXS">
+                            <label for="XXS" class="searchP">XXS</label>
+                        </div>
+                        <div class="checkBlock">
+                            <input type="checkbox" class="checkBox" name="XS">
+                            <label for="XXS" class="searchP">XS</label>
+                        </div>
+                        <div class="checkBlock">
+                            <input type="checkbox" class="checkBox" name="S">
+                            <label for="XXS" class="searchP">S</label>
+                        </div>
+                        <div class="checkBlock">
+                            <input type="checkbox" class="checkBox" name="M">
+                            <label for="XXS" class="searchP">M</label>
+                        </div>
+                        <div class="checkBlock">
+                            <input type="checkbox" class="checkBox" name="L">
+                            <label for="XXS" class="searchP">L</label>
+                        </div>
+                        <div class="checkBlock">
+                            <input type="checkbox" class="checkBox" name="XL">
+                            <label for="XXS" class="searchP">XL</label>
+                        </div>
+                        <div class="checkBlock">
+                            <input type="checkbox" class="checkBox" name="XXL">
+                            <label for="XXS" class="searchP">XXL</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="searchBlock">
+                    <h4 class="searchH4">pRICE</h4>
+                    <div class="searchLine">
+                        <div class="searchLineBegin"></div>
+                        <div class="searchLineMain"></div>
+                        <div class="searchLineEnd"></div>
+                    </div>
+                    <div class="searchLineLables">
+                        <p class="searchP">52$</p>
+                        <p class="searchP">140$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="searchSort">
+                <div class="searchSortElement">
+                    <p class="searchSortElementText">Sort By</p>
+                    <select name="#" id="" class="searchSortSelect">
+                        <option value="#" class="searchSortOption">Name</option>
+                        <option value="#" class="searchSortOption">Date</option>
+                        <option value="#" class="searchSortOption">Price</option>
+                    </select>
+                </div>
+                <div class="searchSortElement">
+                    <p class="searchSortElementText">Show</p>
+                    <select name="" id="" class="searchSortSelect">
+                        <option value="" class="searchSortOption">1</option>
+                        <option value="" class="searchSortOption">2</option>
+                        <option value="" class="searchSortOption">3</option>
+                        <option value="" class="searchSortOption">4</option>
+                        <option value="" class="searchSortOption">5</option>
+                        <option value="" class="searchSortOption">6</option>
+                        <option value="" class="searchSortOption">7</option>
+                        <option value="" class="searchSortOption">8</option>
+                        <option value="" class="searchSortOption">9</option>
+                    </select>
+                </div>
+            </div>
+            <div class="catalogItems">
+                <products ref="products"></products>
+<!--                <div class="feturedBlock catalogBlockMargin">-->
+<!--                    <div class="fBlockImg">-->
+<!--                        <a href="#" class="fBlockImgLink"><img src="img/catalog1.jpg" alt="" class="fImg"></a>-->
+<!--                        <a href="#" class="fBlockCart">-->
+<!--                            <img src="img/CartW.svg" alt="">-->
+<!--                            <p class="fCartText">Add to Cart</p>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                    <div class="fBlockText">-->
+<!--                        <a href="#" class="fBlockNameLink">Mango People T-shirt</a>-->
+<!--                        <p class="fBlockP">$52.00</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="feturedBlock">-->
+<!--                    <div class="fBlockImg">-->
+<!--                        <a href="#" class="fBlockImgLink"><img src="img/catalog2.jpg" alt="" class="fImg"></a>-->
+<!--                        <a href="#" class="fBlockCart">-->
+<!--                            <img src="img/CartW.svg" alt="">-->
+<!--                            <p class="fCartText">Add to Cart</p>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                    <div class="fBlockText">-->
+<!--                        <a href="#" class="fBlockNameLink">Mango People T-shirt</a>-->
+<!--                        <p class="fBlockP">$52.00</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="feturedBlock">-->
+<!--                    <div class="fBlockImg">-->
+<!--                        <a href="#" class="fBlockImgLink"><img src="img/catalog3.jpg" alt="" class="fImg"></a>-->
+<!--                        <a href="#" class="fBlockCart">-->
+<!--                            <img src="img/CartW.svg" alt="">-->
+<!--                            <p class="fCartText">Add to Cart</p>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                    <div class="fBlockText">-->
+<!--                        <a href="#" class="fBlockNameLink">Mango People T-shirt</a>-->
+<!--                        <p class="fBlockP">$52.00</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="feturedBlock">-->
+<!--                    <div class="fBlockImg">-->
+<!--                        <a href="#" class="fBlockImgLink"><img src="img/catalog4.jpg" alt="" class="fImg"></a>-->
+<!--                        <a href="#" class="fBlockCart">-->
+<!--                            <img src="img/CartW.svg" alt="">-->
+<!--                            <p class="fCartText">Add to Cart</p>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                    <div class="fBlockText">-->
+<!--                        <a href="#" class="fBlockNameLink">Mango People T-shirt</a>-->
+<!--                        <p class="fBlockP">$52.00</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="feturedBlock">-->
+<!--                    <div class="fBlockImg">-->
+<!--                        <a href="#" class="fBlockImgLink"><img src="img/catalog5.jpg" alt="" class="fImg"></a>-->
+<!--                        <a href="#" class="fBlockCart">-->
+<!--                            <img src="img/CartW.svg" alt="">-->
+<!--                            <p class="fCartText">Add to Cart</p>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                    <div class="fBlockText">-->
+<!--                        <a href="#" class="fBlockNameLink">Mango People T-shirt</a>-->
+<!--                        <p class="fBlockP">$52.00</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="feturedBlock">-->
+<!--                    <div class="fBlockImg">-->
+<!--                        <a href="#" class="fBlockImgLink"><img src="img/catalog6.jpg" alt="" class="fImg"></a>-->
+<!--                        <a href="#" class="fBlockCart">-->
+<!--                            <img src="img/CartW.svg" alt="">-->
+<!--                            <p class="fCartText">Add to Cart</p>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                    <div class="fBlockText">-->
+<!--                        <a href="#" class="fBlockNameLink">Mango People T-shirt</a>-->
+<!--                        <p class="fBlockP">$52.00</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="feturedBlock">-->
+<!--                    <div class="fBlockImg">-->
+<!--                        <a href="#" class="fBlockImgLink"><img src="img/catalog7.jpg" alt="" class="fImg"></a>-->
+<!--                        <a href="#" class="fBlockCart">-->
+<!--                            <img src="img/CartW.svg" alt="">-->
+<!--                            <p class="fCartText">Add to Cart</p>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                    <div class="fBlockText">-->
+<!--                        <a href="#" class="fBlockNameLink">Mango People T-shirt</a>-->
+<!--                        <p class="fBlockP">$52.00</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="feturedBlock">-->
+<!--                    <div class="fBlockImg">-->
+<!--                        <a href="#" class="fBlockImgLink"><img src="img/catalog8.jpg" alt="" class="fImg"></a>-->
+<!--                        <a href="#" class="fBlockCart">-->
+<!--                            <img src="img/CartW.svg" alt="">-->
+<!--                            <p class="fCartText">Add to Cart</p>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                    <div class="fBlockText">-->
+<!--                        <a href="#" class="fBlockNameLink">Mango People T-shirt</a>-->
+<!--                        <p class="fBlockP">$52.00</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="feturedBlock">-->
+<!--                    <div class="fBlockImg">-->
+<!--                        <a href="#" class="fBlockImgLink"><img src="img/catalog9.jpg" alt="" class="fImg"></a>-->
+<!--                        <a href="#" class="fBlockCart">-->
+<!--                            <img src="img/CartW.svg" alt="">-->
+<!--                            <p class="fCartText">Add to Cart</p>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                    <div class="fBlockText">-->
+<!--                        <a href="#" class="fBlockNameLink">Mango People T-shirt</a>-->
+<!--                        <p class="fBlockP">$52.00</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+            <div class="catalogPadding">
+                <div class="catalogPages">
+                    <a href="#" class="pagesNumber"><i class="fas fa-angle-left pagesArrow"></i></a>
+                    <a href="#" class="pagesNumber  pagesActive">1</a>
+                    <a href="#" class="pagesNumber">2</a>
+                    <a href="#" class="pagesNumber">3</a>
+                    <a href="#" class="pagesNumber">4</a>
+                    <a href="#" class="pagesNumber">5</a>
+                    <a href="#" class="pagesNumber pagesDotsPre">6</a>
+                    <a href="#" class="pagesDots">.....</a>
+                    <a href="#" class="pagesNumber pagesDotsPost">20</a>
+                    <a href="#" class="pagesNumber"><i class="fas fa-angle-right pagesArrowActive"></i></a>
+                </div>
+                <button class="catalogButton">View All</button>
+            </div>
+        </div>
+        <error ref="error"></error>
+    </main>
+    <div class="catalogBottom">
+        <div class="container catalogBottomFlex">
+            <div class="catalogBottomBlock">
+                <img src="img/Delivery.svg" alt="" class="offerImg">
+                <div class="offerInfo">
+                    <h3 class="offerH3">Sales & discounts</h3>
+                    <p class="offerP">Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                        with extensive models.</p>
+                </div>
+            </div>
+            <div class="catalogBottomBlock">
+                <img src="img/Discount.svg" alt="" class="offerImg">
+                <div class="offerInfo">
+                    <h3 class="offerH3">Sales & discounts</h3>
+                    <p class="offerP">Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                        with extensive models.</p>
+                </div>
+            </div>
+            <div class="catalogBottomBlock">
+                <img src="img/Quality.svg" alt="" class="offerImg">
+                <div class="offerInfo">
+                    <h3 class="offerH3">Sales & discounts</h3>
+                    <p class="offerP">Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                        with extensive models.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <section class="subs">
+        <div class="subsContent">
+            <div class="container subsFlex">
+                <div class="subsLeft">
+                    <figure class="subsComment">
+                        <img src="img/face.png" alt="" class="subsFace">
+                        <div class="subsText">
+                            <p class="subsP">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
+                                condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                            <h4 class="subsName">Bin Burhan</h4>
+                            <p class="subsPlace">Dhaka, Bd</p>
+                            <div class="subsSelectMenu">
+                                <div class="select"></div>
+                                <div class="select"></div>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+                <div class="subsRight">
+                    <form action="#" class="subsForm">
+                        <h2 class="subsH2">Subscribe</h2>
+                        <h4 class="subsH4">FOR OUR NEWLETTER AND PROMOTION</h4>
+                        <input type="email" class="emailInput" placeholder="Enter Your Email">
+                        <button type="submit"
+                                class="subsButton">Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footerFlex container">
+            <div class="footerContent">
+                <div class="fText">
+                    <a href="#" class="logo"><img class="logoImg" src="img/logo.png" alt="">BRAN<span
+                            class="logoLetter">D</span></a>
+                    <p class="footerP">
+                        Objectively transition extensive data rather than cross functional solutions. Monotonectally
+                        syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an
+                        expanded array of processes and cross-unit partnerships. <br> <br>
+
+                        Efficiently plagiarize 24/365 action items and focused infomediaries.
+                        Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+
+                    </p>
+                </div>
+                <div class="fCompany">
+                    <h2 class="fMenuName">COMPANY</h2>
+                    <ul class="fMenu">
+                        <li class="fList"><a href="#" class="fLink">Home </a></li>
+                        <li class="fList"><a href="#" class="fLink">Shop</a></li>
+                        <li class="fList"><a href="#" class="fLink">About</a></li>
+                        <li class="fList"><a href="#" class="fLink">How It Works</a></li>
+                        <li class="fList"><a href="#" class="fLink">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="fInfo">
+                    <h2 class="fMenuName">INFORMATION</h2>
+                    <ul class="fMenu">
+                        <li class="fList"><a href="#" class="fLink">Tearms & Condition</a></li>
+                        <li class="fList"><a href="#" class="fLink">Privacy Policy</a></li>
+                        <li class="fList"><a href="#" class="fLink">How to Buy</a></li>
+                        <li class="fList"><a href="#" class="fLink">How to Sell</a></li>
+                        <li class="fList"><a href="#" class="fLink">Promotion</a></li>
+                    </ul>
+                </div>
+                <div class="fShopCategory">
+                    <h2 class="fMenuName">SHOP CATEGORY</h2>
+                    <ul class="fMenu">
+                        <li class="fList"><a href="#+" class="fLink">Men</a></li>
+                        <li class="fList"><a href="#+" class="fLink">Women</a></li>
+                        <li class="fList"><a href="#+" class="fLink">Child</a></li>
+                        <li class="fList"><a href="#+" class="fLink">Apparel</a></li>
+                        <li class="fList"><a href="#+" class="fLink">Brows All</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container bottomFlex">
+                <p class="copy">&copy; 2019 Brand All Rights Reserved.</p>
+                <div class="social">
+                    <a href="#" class="socBlock"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="socBlock"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="socBlockNonActive"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="socBlock"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" class="socBlock"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/CartComp.js"></script>
+<script src="js/ProductComp.js"></script>
+<script src="js/FilterComp.js"></script>
+<script src="js/ErrorComp.js"></script>
+<script src="js/main.js"></script>
+
+</html>
