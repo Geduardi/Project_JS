@@ -10,7 +10,6 @@ const product = {
             cartAPI: this.$root.$refs.cart, // добираемся до компонента корзины, чтобы далее использовать метод добавления
         };
     },
-
     template: `
     <div class="feturedBlock">                
             <div class="fBlockImg">
@@ -21,7 +20,7 @@ const product = {
                         </a>
                     </div>
                     <div class="fBlockText">
-                        <a href="#" class="fBlockNameLink">{{ product.product_name }}</a>
+                        <a href="single.html" class="fBlockNameLink" >{{ product.product_name }}</a>
                         <p class="fBlockP">\${{ product.price }}</p>
                     </div>
             </div>
@@ -49,6 +48,9 @@ const products = {
         filter(userSearch){
             let regexp = new RegExp(userSearch, 'i');
             this.filtered = this.products.filter(el => regexp.test(el.product_name));
+        },
+        putLocalStorage(id){
+            localStorage.id_product = id;
         }
     },
     mounted(){
@@ -59,10 +61,13 @@ const products = {
                     this.filtered.push(el);
                 }
             });
+        if (localStorage.id_product){
+            console.log(localStorage.id_product);
+        }
     },
     template: `
         <div class="catalogItems">
-            <product v-for="item of filtered" :key="item.id_product" :img="item.product_img_url" :product="item"></product>
+            <product v-for="item of filtered" :key="item.id_product" :img="item.product_img_url" :product="item" @click="putLocalStorage(item.id_product)"></product>
         </div>
     `
 };
