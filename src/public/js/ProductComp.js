@@ -20,7 +20,7 @@ const product = {
                         </a>
                     </div>
                     <div class="fBlockText">
-                        <a href="single.html" class="fBlockNameLink" >{{ product.product_name }}</a>
+                        <a :href="'single.html?id=' + product.id_product" class="fBlockNameLink">{{ product.product_name }}</a>
                         <p class="fBlockP">\${{ product.price }}</p>
                     </div>
             </div>
@@ -49,9 +49,7 @@ const products = {
             let regexp = new RegExp(userSearch, 'i');
             this.filtered = this.products.filter(el => regexp.test(el.product_name));
         },
-        putLocalStorage(id){
-            localStorage.id_product = id;
-        }
+
     },
     mounted(){
         this.$parent.getJson('/api/products')
@@ -61,13 +59,11 @@ const products = {
                     this.filtered.push(el);
                 }
             });
-        if (localStorage.id_product){
-            console.log(localStorage.id_product);
-        }
+
     },
     template: `
         <div class="catalogItems">
-            <product v-for="item of filtered" :key="item.id_product" :img="item.product_img_url" :product="item" @click="putLocalStorage(item.id_product)"></product>
+            <product v-for="item of filtered" :key="item.id_product" :img="item.product_img_url" :product="item"></product>
         </div>
     `
 };
