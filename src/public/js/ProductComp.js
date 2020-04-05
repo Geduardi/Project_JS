@@ -10,7 +10,6 @@ const product = {
             cartAPI: this.$root.$refs.cart, // добираемся до компонента корзины, чтобы далее использовать метод добавления
         };
     },
-
     template: `
     <div class="feturedBlock">                
             <div class="fBlockImg">
@@ -21,7 +20,7 @@ const product = {
                         </a>
                     </div>
                     <div class="fBlockText">
-                        <a href="#" class="fBlockNameLink">{{ product.product_name }}</a>
+                        <a :href="'single.html?id=' + product.id_product" class="fBlockNameLink">{{ product.product_name }}</a>
                         <p class="fBlockP">\${{ product.price }}</p>
                     </div>
             </div>
@@ -49,7 +48,8 @@ const products = {
         filter(userSearch){
             let regexp = new RegExp(userSearch, 'i');
             this.filtered = this.products.filter(el => regexp.test(el.product_name));
-        }
+        },
+
     },
     mounted(){
         this.$parent.getJson('/api/products')
@@ -59,6 +59,7 @@ const products = {
                     this.filtered.push(el);
                 }
             });
+
     },
     template: `
         <div class="catalogItems">

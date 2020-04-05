@@ -1936,7 +1936,7 @@ button:hover {
   align-items: center;
 }
 .searchLineBegin {
-  background-image: url(../../../../img/Ellipse.svg);
+  background-image: url(../img/Ellipse.svg);
   width: 14px;
   height: 14px;
   margin-left: 23px;
@@ -1947,7 +1947,7 @@ button:hover {
   height: 6px;
 }
 .searchLineEnd {
-  background-image: url(../../../../img/Ellipse.svg);
+  background-image: url(../img/Ellipse.svg);
   width: 14px;
   height: 14px;
 }
