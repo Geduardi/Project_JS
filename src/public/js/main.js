@@ -1,4 +1,5 @@
 import cart from './CartComp'
+import cartDisplay from './CartDisplayComp'
 import products from './ProductComp'
 import search from './FilterComp'
 import error from './ErrorComp'
@@ -10,6 +11,7 @@ const app = {
         products,
         error,
         search,
+        cartDisplay,
     },
     methods: {
         getJson(url) {
@@ -54,6 +56,11 @@ const app = {
                     this.$refs.error.setError(error);
                 });
         },
+        getGet(name) {
+            let s = window.location.search;
+            s = s.match(new RegExp(name + '=([^&=]+)'));
+            return s ? s[1] : false;
+        }
     },
 };
 

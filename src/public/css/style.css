@@ -199,6 +199,9 @@
   justify-content: center;
   padding: 20px 0;
 }
+.cartList__img {
+  width: 115px;
+}
 .cartList__link:hover {
   filter: brightness(0.9);
 }
@@ -247,16 +250,16 @@
   font-size: 13px;
   font-weight: 300;
 }
-.cartList__input {
+.cartList__count {
   border: 1px solid #eaeaea;
   background-color: #ffffff;
   width: 54px;
   height: 30px;
   line-height: 30px;
   text-align: center;
-}
-.cartList__input::-webkit-outer-spin-button, .cartList__input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  color: #656565;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .orderList {

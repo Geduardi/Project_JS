@@ -28,7 +28,7 @@ const product = {
     `
 };
 
-const products = {
+const singleProduct = {
     components: { product },
     data(){
         return {
@@ -68,4 +68,4 @@ const products = {
     `
 };
 
-export default products;
+export default singleProduct;

@@ -1,21 +1,6 @@
 const cartItem = {
     props: ['cartItem', 'img'],
-    template: `
-<!--                <div class="cart-item">-->
-<!--                    <div class="product-bio">-->
-<!--                        <img :src="img" alt="Some image">-->
-<!--                        <div class="product-desc">-->
-<!--                            <p class="product-title">{{cartItem.product_name}}</p>-->
-<!--                            <p class="product-quantity">Количество: {{cartItem.quantity}}</p>-->
-<!--                            <p class="product-single-price">{{cartItem.price}}₽ за единицу</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="right-block">-->
-<!--                        <p class="product-price">{{cartItem.quantity*cartItem.price}}₽</p>-->
-<!--                        <button class="del-btn" @click="$emit('remove', cartItem)">&times;</button>-->
-<!--                    </div>-->
-<!--                </div>-->
-                
+    template: `                
                 <div class="dCartItem">
                 <a href="#"><img :src="img" alt="Some image" class="dCartItem__img"></a>
                 <div class="dCartItemText">
@@ -41,14 +26,14 @@ const cart = {
         }
     },
     methods: {
-        addProduct(product) {
+        addProduct(product, productQuantity = 1) {
             let find = this.cartItems.find(el => el.id_product === product.id_product);
             if (find) {
-                this.$parent.putJson(`/api/cart/${find.id_product}`, {quantity: 1});
-                find.quantity++;
+                this.$parent.putJson(`/api/cart/${find.id_product}`, {quantity: productQuantity});
+                find.quantity+=productQuantity;
                 this.cartPrice += product.price;
             } else {
-                let prod = Object.assign({quantity: 1}, product);
+                let prod = Object.assign({quantity: productQuantity}, product);
                 this.$parent.postJson('/api/cart', prod)
                     .then(data => {
                         if (data.result === 1) {
@@ -76,6 +61,17 @@ const cart = {
             }
             this.cartPrice -= item.price;
         },
+        clearCart(){
+            if (this.cartItems.length != 0){
+                this.$parent.deleteJson(`/api/cart/`)
+                    .then(data => {
+                        if (data.result === 1) {
+                            this.cartItems.length = 0;
+                        }
+
+                    })
+            }
+        }
     },
     mounted() {
         this.$parent.getJson('/api/cart')
@@ -87,19 +83,6 @@ const cart = {
             });
     },
     template: `
-<!--        <div>-->
-<!--&lt;!&ndash;            <button class="btn-cart" type="button" @click="showCart = !showCart">Корзина</button>&ndash;&gt;-->
-<!--&lt;!&ndash;            <div class="cart-block" v-show="showCart">&ndash;&gt;-->
-<!--&lt;!&ndash;                <p v-if="!cartItems.length">Корзина пуста</p>&ndash;&gt;-->
-<!--&lt;!&ndash;                <cart-item class="cart-item" &ndash;&gt;-->
-<!--&lt;!&ndash;                v-for="item of cartItems" &ndash;&gt;-->
-<!--&lt;!&ndash;                :key="item.id_product"&ndash;&gt;-->
-<!--&lt;!&ndash;                :cart-item="item" &ndash;&gt;-->
-<!--&lt;!&ndash;                :img="imgCart"&ndash;&gt;-->
-<!--&lt;!&ndash;                @remove="remove">&ndash;&gt;-->
-<!--&lt;!&ndash;                </cart-item>&ndash;&gt;-->
-<!--&lt;!&ndash;            </div>&ndash;&gt;-->
-<!--        </div>-->
           <div class="cartBlock">
             <a href="#" class="cartLink" @click="showCart = !showCart"><img src="img/cart.svg" alt="" class="headerCartImg"></a>
             <div class="dropCartFlex" v-show="showCart" :class="{ dropCartFlex__active : showCart }">
@@ -111,33 +94,12 @@ const cart = {
                 :img="item.product_img_url"
                 @remove="remove">
                 </cart-item>
-<!--              <div class="dCartItem">-->
-<!--                <a href="#"><img src="img/cartItem1.jpg" alt=""></a>-->
-<!--                <div class="dCartItemText">-->
-<!--                  <a href="#" class="dCartLink">Rebox Zane</a>-->
-<!--                  <p><i class="fa fa-lg fa-star"></i><i class="fa fa-lg fa-star"></i><i class="fa fa-lg fa-star"></i><i-->
-<!--                      class="fa fa-lg fa-star"></i><i class="fas fa-lg fa-star-half-alt"></i></p>-->
-<!--                  <p class="dCartItemP">1 x $250</p>-->
-<!--                </div>-->
-<!--                <a href="#" class="dCartDelete"><i class="fas fa-times-circle"></i></a>-->
-
-<!--              </div>-->
-<!--              <div class="dCartItem">-->
-<!--                <a href="#"><img src="img/cartItem2.jpg" alt=""></a>-->
-<!--                <div class="dCartItemText">-->
-<!--                  <a href="#" class="dCartLink">Rebox Zane</a>-->
-<!--                  <p><i class="fa fa-lg fa-star"></i><i class="fa fa-lg fa-star"></i><i class="fa fa-lg fa-star"></i><i-->
-<!--                      class="fa fa-lg fa-star"></i><i class="fas fa-lg fa-star-half-alt"></i></p>-->
-<!--                  <p class="dCartItemP">1 x $250</p>-->
-<!--                </div>-->
-<!--                <a href="#" class="dCartDelete"><i class="fas fa-times-circle"></i></a>-->
-<!--              </div>-->
               <div class="dCartTotal">
                 <h4 class="dTotalH4">TOTAL</h4>
                 <h4 class="dTotalH4">\${{ cartPrice }}</h4>
               </div>
-              <a href="#" class="dCartButton">Checkout</a>
-              <a href="#" class="dCartButton">Go to cart</a>
+              <a href="checkout.html" class="dCartButton">Checkout</a>
+              <a href="cart.html" class="dCartButton">Go to cart</a>
             </div>
           </div>`
     

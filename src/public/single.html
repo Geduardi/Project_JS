@@ -5,89 +5,22 @@
 	<meta charset="UTF-8">
 	<script src="https://kit.fontawesome.com/7c69a4a837.js" crossorigin="anonymous"></script>	
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/html" href="css/style.css">
 	<title>Single page</title>
 </head>
 
 <body>
+<div id="app">
 	<header class="header">
 		<div class="container headerFlex">
 			<div class="headerLeft">
-				<a href="#" class="logo"><img class="logoImg" src="img/logo.png" alt="">BRAN<span
+				<a href="index.html" class="logo"><img class="logoImg" src="img/logo.png" alt="">BRAN<span
 						class="logoLetter">D</span></a>
-				<form action="#" class="headerForm">
-					<div class="browseFlex">
-						<div class="browse arrowLeft">Browse</div>
-						<div class="drop">
-							<div class="dropFlex">
-								<h3 class="dropH3">Women</h3>
-								<ul class="dropUl browsePadding">
-									<li class="dropList"><a href="#" class="dropLink">Dresses</a></li>
-									<li class="dropList"><a href="#" class="dropLink">Tops</a></li>
-									<li class="dropList"><a href="#" class="dropLink">Sweaters/Knits</a></li>
-									<li class="dropList"><a href="#" class="dropLink">Jackets/Coats</a></li>
-									<li class="dropList"><a href="#" class="dropLink">Blazers</a></li>
-									<li class="dropList"><a href="#" class="dropLink">Denim</a></li>
-									<li class="dropList"><a href="#" class="dropLink">Leggings/Pants</a></li>
-									<li class="dropList"><a href="#" class="dropLink">Skirts/Shorts</a></li>
-									<li class="dropList"><a href="#" class="dropLink">Accessories </a></li>
-								</ul>
-								<h3 class="dropH3">Men</h3>
-								<ul class="dropUl">
-									<li class="dropList"><a href="#" class="dropLink">Tees/Tank tops</a></li>
-									<li class="dropList"><a href="#" class="dropLink">Shirts/Polos</a></li>
-									<li class="dropList"><a href="#" class="dropLink">Sweaters</a></li>
-									<li class="dropList"><a href="#" class="dropLink">Sweatshirts/Hoodies</a></li>
-									<li class="dropList"><a href="#" class="dropLink">Blazers</a></li>
-									<li class="dropList"><a href="#" class="dropLink">Jackets/vests</a></li>
-
-								</ul>
-							</div>
-
-						</div>
-					</div>
-					<input type="text" placeholder="Search for Item..." class="headerInput">
-					<button type="submit" class="headerSearch"><i class="fas fa-search"></i> </button>
-				</form>
-
+				<search></search>
 			</div>
 			<div class="headerRight">
-				<!--                <div class="cartBlock">-->
-				<!--                    <a href="#" class="cartLink"><img src="img/cart.svg" alt="" class="headerCartImg"></a>-->
-				<!--                    <div class="dropCartFlex">-->
-				<!--                        <div class="dCartItem">-->
-				<!--                            <a href="#"><img src="img/cartItem1.jpg" alt=""></a>-->
-				<!--                            <div class="dCartItemText">-->
-				<!--                                <a href="#" class="dCartLink">Rebox Zane</a>-->
-				<!--                                <p><i class="fa fa-lg fa-star"></i><i class="fa fa-lg fa-star"></i><i-->
-				<!--                                        class="fa fa-lg fa-star"></i><i-->
-				<!--                                        class="fa fa-lg fa-star"></i><i class="fas fa-lg fa-star-half-alt"></i></p>-->
-				<!--                                <p class="dCartItemP">1 x $250</p>-->
-				<!--                            </div>-->
-				<!--                            <a href="#" class="dCartDelete"><i class="fas fa-times-circle"></i></a>-->
-
-				<!--                        </div>-->
-				<!--                        <div class="dCartItem">-->
-				<!--                            <a href="#"><img src="img/cartItem2.jpg" alt=""></a>-->
-				<!--                            <div class="dCartItemText">-->
-				<!--                                <a href="#" class="dCartLink">Rebox Zane</a>-->
-				<!--                                <p><i class="fa fa-lg fa-star"></i><i class="fa fa-lg fa-star"></i><i-->
-				<!--                                        class="fa fa-lg fa-star"></i><i-->
-				<!--                                        class="fa fa-lg fa-star"></i><i class="fas fa-lg fa-star-half-alt"></i></p>-->
-				<!--                                <p class="dCartItemP">1 x $250</p>-->
-				<!--                            </div>-->
-				<!--                            <a href="#" class="dCartDelete"><i class="fas fa-times-circle"></i></a>-->
-				<!--                        </div>-->
-				<!--                        <div class="dCartTotal">-->
-				<!--                            <h4 class="dTotalH4">TOTAL</h4>-->
-				<!--                            <h4 class="dTotalH4">$500.00</h4>-->
-				<!--                        </div>-->
-				<!--                        <a href="#" class="dCartButton">Checkout</a>-->
-				<!--                        <a href="#" class="dCartButton">Go to cart</a>-->
-				<!--                    </div>-->
-				<!--                </div>-->
 				<cart ref="cart"></cart>
-				<a href="#" class="button arrowRight">My Account</a>
+				<a href="cart.html" class="button arrowRight">My Account</a>
 			</div>
 		</div>
 	</header>
@@ -658,12 +591,9 @@
 			</div>
 		</div>
 	</footer>
+</div>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="js/CartComp.js"></script>
-<script src="js/ProductComp.js"></script>
-<script src="js/FilterComp.js"></script>
-<script src="js/ErrorComp.js"></script>
 <script src="js/main.js"></script>
 </html>

@@ -9,7 +9,9 @@
 	align-items: center;
 	justify-content: center;
 	padding: 20px 0;
-
+	&__img{
+		width: 115px;
+	}
 	&__link {
 		&:hover {
 			filter: brightness(0.9);
@@ -75,19 +77,17 @@
 		font-weight: 300;
 	}
 
-	&__input {
+	&__count {
 		border: 1px solid #eaeaea;
 		background-color: #ffffff;
 		width: 54px;
 		height: 30px;
 		line-height: 30px;
 		text-align: center;
+		color: #656565;
+		font-size: 13px;
+		font-weight: 400;
 
-		&::-webkit-outer-spin-button,
-		&::-webkit-inner-spin-button {
-			-webkit-appearance: none;
-
-		}
 	}
 
 }

@@ -27,8 +27,15 @@ const remove = (cart, req) => {
     return { name: req.body.product_name, newCart: JSON.stringify(cart, null, 4) };
 };
 
+const clear = (cart, req) => {
+    cart.contents.length = 0;
+    cart.amount = 0;
+    return { name: 'Cart clearing', newCart: JSON.stringify(cart, null, 4) };
+};
+
 module.exports = {
     add,
     change,
     remove,
+    clear
 };

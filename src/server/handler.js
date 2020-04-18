@@ -10,6 +10,7 @@ const actions = {
     add: cart.add,
     change: cart.change,
     remove: cart.remove,
+    clear: cart.clear,
 };
 
 /**
@@ -29,7 +30,6 @@ const handler = (req, res, action, file) => {
                 if (err) {
                     res.send('{"result": 0}');
                 } else {
-                    console.log(name);
                     logger(name, action);
                     res.send('{"result": 1}');
                 }

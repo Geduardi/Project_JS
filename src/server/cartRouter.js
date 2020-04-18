@@ -32,5 +32,8 @@ router.put('/:id', (req, res) => {
 router.delete('/:id', (req, res) => {
     handler(req, res, 'remove', cartJSONPath);
 });
+router.delete('/', (req, res) => {
+    handler(req, res, 'clear', cartJSONPath);
+});
 
 module.exports = router;
