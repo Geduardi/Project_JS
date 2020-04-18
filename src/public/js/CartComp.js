@@ -4,7 +4,7 @@ const cartItem = {
                 <div class="dCartItem">
                 <a href="#"><img :src="img" alt="Some image" class="dCartItem__img"></a>
                 <div class="dCartItemText">
-                  <a href="#" class="dCartLink">{{cartItem.product_name}}</a>
+                  <a :href="'single.html?id='+ cartItem.id_product" class="dCartLink">{{cartItem.product_name}}</a>
                   <p><i class="fa fa-lg fa-star"></i><i class="fa fa-lg fa-star"></i><i class="fa fa-lg fa-star"></i><i
                       class="fa fa-lg fa-star"></i><i class="fas fa-lg fa-star-half-alt"></i></p>
                   <p class="dCartItemP">{{cartItem.quantity}} x \${{cartItem.price}}</p>

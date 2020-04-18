@@ -5,20 +5,12 @@ const search = {
             catalogPage: false
         }
     },
-    methods:{
-        // getGet(name) {
-        //     let s = window.location.search;
-        //     s = s.match(new RegExp(name + '=([^&=]+)'));
-        //     return s ? s[1] : false;
-        // }
-    },
     mounted(){
         if (this.$root.getGet('search')){
             this.userSearch = this.$root.getGet('search');
         }
         if (document.location.pathname === '/catalog.html'){
             this.catalogPage = true;
-            console.log(this.catalogPage);
         }
     },
     template: `

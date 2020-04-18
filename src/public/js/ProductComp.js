@@ -2,12 +2,8 @@ const product = {
     props: ['product', 'img'],
     data() {
         return {
-            /**
-             * Создали ссылку на API нашей корзины. Т.к. все компоненты у нас регистрируются в корневом экземпляре Vue,
-             * то мы легко можем получить доступ к ним используя свойство $root.
-             * $parent можно использовать для доступа к родительскому экземпляру из дочернего.
-             */
-            cartAPI: this.$root.$refs.cart, // добираемся до компонента корзины, чтобы далее использовать метод добавления
+
+            cartAPI: this.$root.$refs.cart,
         };
     },
     template: `
@@ -35,6 +31,7 @@ const products = {
             products: [],
             filtered: [],
             imgCatalog: 'https://placehold.it/200x150',
+            countDisplay: 0
         }
     },
     methods: {
@@ -47,8 +44,10 @@ const products = {
             let s = window.location.search;
             s = s.match(new RegExp(name + '=([^&=]+)'));
             return s ? s[1] : false;
-        }
+        },
+
     },
+
     mounted(){
         this.$parent.getJson('/api/products')
             .then(data => {
@@ -56,13 +55,29 @@ const products = {
                     this.products.push(el);
                     this.filtered.push(el);
                 }
-                if (this.getGet('search')){
+                if (this.$root.getGet('search')){
                     this.filter(this.getGet('search'));
                 }
+                if (document.location.pathname === '/single.html'){
+                    this.countDisplay = 4;
+                }
+                if (document.location.pathname === '/index.html'){
+                    this.countDisplay = 8;
+                }
+                if (this.countDisplay){
+                    this.filtered.length = 0;
+                    let array = [...this.products];
+                    for (let i=0; i < this.countDisplay; i++){
+                        let rand = Math.floor(Math.random() * array.length);
+                        this.filtered.push(array[rand]);
+                        array.splice(rand, 1);
+                    }
+                }
             });
+
     },
     template: `
-        <div class="catalogItems">
+        <div>
             <product v-for="item of filtered" :key="item.id_product" :img="item.product_img_url" :product="item"></product>
         </div>
     `

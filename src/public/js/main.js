@@ -1,6 +1,7 @@
 import cart from './CartComp'
 import cartDisplay from './CartDisplayComp'
 import products from './ProductComp'
+import singleProduct from './singleComp'
 import search from './FilterComp'
 import error from './ErrorComp'
 
@@ -12,6 +13,7 @@ const app = {
         error,
         search,
         cartDisplay,
+        singleProduct
     },
     methods: {
         getJson(url) {

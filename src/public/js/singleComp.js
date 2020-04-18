@@ -1,70 +1,78 @@
-const product = {
-    props: ['product', 'img'],
-    data() {
-        return {
-            /**
-             * Создали ссылку на API нашей корзины. Т.к. все компоненты у нас регистрируются в корневом экземпляре Vue,
-             * то мы легко можем получить доступ к ним используя свойство $root.
-             * $parent можно использовать для доступа к родительскому экземпляру из дочернего.
-             */
-            cartAPI: this.$root.$refs.cart, // добираемся до компонента корзины, чтобы далее использовать метод добавления
-        };
-    },
-    template: `
-    <div class="feturedBlock">                
-            <div class="fBlockImg">
-                        <div href="#" class="fBlockImgLink"><img :src="img" alt="" class="fImg"></div>
-                        <a href="javascript: void 0" class="fBlockCart" @click="cartAPI.addProduct(product)">
-                            <img src="img/CartW.svg" alt="">
-                            <p class="fCartText">Add to Cart</p>
-                        </a>
-                    </div>
-                    <div class="fBlockText">
-                        <a :href="'single.html?id=' + product.id_product" class="fBlockNameLink">{{ product.product_name }}</a>
-                        <p class="fBlockP">\${{ product.price }}</p>
-                    </div>
-            </div>
-     </div>
-    `
-};
-
 const singleProduct = {
-    components: { product },
+    components: {  },
     data(){
         return {
-            products: [],
-            filtered: [],
-            imgCatalog: 'https://placehold.it/200x150',
-        }
-    },
-    methods: {
-        filter(userSearch){
-            let regexp = new RegExp(userSearch, 'i');
-            this.filtered = this.products.filter(el => regexp.test(el.product_name));
-
-        },
-        getGet(name) {
-            let s = window.location.search;
-            s = s.match(new RegExp(name + '=([^&=]+)'));
-            return s ? s[1] : false;
+            allProducts: [],
+            img: '',
+            product:{},
+            quantity: 1
         }
     },
     mounted(){
         this.$parent.getJson('/api/products')
             .then(data => {
                 for(let el of data){
-                    this.products.push(el);
-                    this.filtered.push(el);
+                    this.allProducts.push(el);
                 }
-                if (this.getGet('search')){
-                    this.filter(this.getGet('search'));
-                }
+                this.product = this.allProducts.find(item => item.id_product === +this.$root.getGet('id'));
+                this.img = this.product.product_img_url;
             });
     },
+
     template: `
-        <div class="catalogItems">
-            <product v-for="item of filtered" :key="item.id_product" :img="item.product_img_url" :product="item"></product>
-        </div>
+        <section class="arrivalContent">
+          <figure class="arrImgBox" :style="{'background-image': 'url('+img+')', 'background-size' : 'contain'}">
+            <a href="#" class="arrLinkArrow"><i class="fas fa-chevron-left"></i></a>
+            <a href="#" class="arrLinkArrow"><i class="fas fa-chevron-right"></i></a>
+          </figure>
+          <div class="arrInfo container">
+            <div class="arrInfoBlock">
+              <article class="arrInfoText">
+                <div class="arrBlock">
+                  <h4 class="arrBlockH4">MEN COLLECTION</h4>
+                  <div class="arrInfoLineGr">
+                    <div class="arrInfoRed"></div>
+                  </div>
+                </div>
+                <h3 class="arrBlockH3">{{product.product_name}}</h3>
+                <p class="arrBlockP">{{product.description}}
+                </p>
+                <div class="arrBlockDetail">
+                  <p class="arrBlockDetailP">MATERIAL: <span class="spanP">COTTON</span></p>
+                  <p class="arrBlockDetailP">DESIGNER: <span class="spanP">BINBURHAN</span></p>
+                </div>
+                <p class="arrBlockPriceP">\${{product.price}}</p>
+              </article>
+              <form action="#" class="arrBlockForm" @submit.prevent="$root.$refs.cart.addProduct(product,+quantity)">
+                <div class="chooseArea">
+                  <div class="chBlock">
+                    <h4 class="chH4">CHOOSE COLOR</h4>
+                    <figure class="chBlockBox">
+                      <div class="chColorFlex">
+                        <div class="chColorSample"></div>
+                        <p class="chDescr">Red</p>
+                      </div>
+                      <i class="fas fa-angle-down"></i>
+                    </figure>
+                  </div>
+                  <div class="chBlock">
+                    <h4 class="chH4">CHOOSE SIZE</h4>
+                    <figure class="chBlockBox">
+                      <p class="chDescr">XXL</p>
+                      <i class="fas fa-angle-down"></i>
+                    </figure>
+                  </div>
+                  <div class="chBlock">
+                    <h4 class="chH4">QUANTITY</h4>
+                    <input type="number" class="chInput" v-model:value="quantity">
+                  </div>
+                </div>
+                <button type="submit" class="chooseButton"><img src="img/cartPink.svg" alt="" class="chCartImg">
+                  Add to Cart</button>
+              </form>
+            </div>
+          </div>
+    </section>
     `
 };
 

@@ -16,7 +16,7 @@ const cartDisplayItem = {
                 <div class="cartList__product">
                   <a href="#" class="cartList__link"><img :src="img" alt="" class="cartList__img"></a>
                   <div class="cartList__info">
-                    <a href="#" class="cartList__link">
+                    <a :href="'single.html?id='+cartItem.id_product" class="cartList__link">
                       <h1 class="cartList__h1 cartList__info__padding">{{cartItem.product_name}}</h1>
                     </a>
                     <p class="cartList__p">Color:<span class="cartList__span">Red</span></p>
@@ -87,7 +87,7 @@ const cartDisplay = {
           </section>
           <div class="cartForm__actions">
             <button class="cartButton cartForm__button" @click="cartAPI.clearCart()">cLEAR SHOPPING CART</button>
-            <button class="cartButton cartForm__button">cONTINUE sHOPPING</button>
+            <a href="catalog.html" class="cartButton cartForm__button">cONTINUE sHOPPING</a>
           </div>
           <div class="cartForm__bottom">
             <div class="cartForm__block">

@@ -2,9 +2,7 @@ const moment = require('moment');
 const fs = require('fs');
 const path = require('path');
 
-/**
- * Используем path дабы избежать проблем с относительными путями до файлов. Делаем их абсолютными.
- */
+
 const statsJSON = path.resolve(__dirname, 'db/stats.json');
 
 const logger = (name, action) => {

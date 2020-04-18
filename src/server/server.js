@@ -8,9 +8,6 @@ app.use(express.json());
 app.use('/', express.static('./dist/public'));
 app.use('/api/cart', cartRouter);
 
-/**
- * Используем path дабы избежать проблем с относительными путями до файлов. Делаем их абсолютными.
- */
 const catalogJSONPath = path.resolve(__dirname, 'db/products.json');
 
 app.get('/api/products', (req, res) => {
@@ -30,7 +27,4 @@ app.listen(port, () => {
     console.log(`Server started at port ${port}`);
 });
 
-// app.get(); // READ
-// app.post(); // CREATE
-// app.put(); // UPDATE
-// app.delete(); // DELETE
+
