@@ -1,0 +1,846 @@
+[
+    {
+        "time": "30 Jan 2020, 7:54:11 pm",
+        "action": "change"
+    },
+    {
+        "time": "30 Jan 2020, 7:54:15 pm",
+        "action": "change"
+    },
+    {
+        "time": "30 Jan 2020, 7:54:20 pm",
+        "action": "change"
+    },
+    {
+        "time": "30 Jan 2020, 7:54:21 pm",
+        "prod_name": "Мышка",
+        "action": "add"
+    },
+    {
+        "time": "30 Jan 2020, 7:54:22 pm",
+        "action": "remove"
+    },
+    {
+        "time": "30 Jan 2020, 7:54:22 pm",
+        "action": "remove"
+    },
+    {
+        "time": "30 Jan 2020, 8:06:14 pm",
+        "action": "change"
+    },
+    {
+        "time": "30 Jan 2020, 8:06:16 pm",
+        "action": "change"
+    },
+    {
+        "time": "30 Jan 2020, 8:06:17 pm",
+        "action": "remove"
+    },
+    {
+        "time": "30 Jan 2020, 8:06:18 pm",
+        "action": "remove"
+    },
+    {
+        "time": "30 Jan 2020, 8:06:21 pm",
+        "prod_name": "Ноутбук",
+        "action": "add"
+    },
+    {
+        "time": "30 Jan 2020, 8:06:21 pm",
+        "prod_name": "Gamepad",
+        "action": "add"
+    },
+    {
+        "time": "30 Jan 2020, 8:06:22 pm",
+        "prod_name": "Keyboard",
+        "action": "add"
+    },
+    {
+        "time": "30 Jan 2020, 8:06:23 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 4:43:05 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 5:09:53 pm",
+        "prod_name": "Keyboard",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 5:10:02 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 5:10:05 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 5:10:05 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 5:10:15 pm",
+        "prod_name": "Gamepad",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 5:14:26 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 5:14:50 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 5:14:51 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 5:14:54 pm",
+        "prod_name": "Мышка",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 5:15:13 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 5:17:31 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 5:17:51 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 5:17:55 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 5:17:56 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 5:17:57 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 5:17:59 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 5:18:41 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 5:18:45 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 5:37:15 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 5:43:52 pm",
+        "prod_name": "Mango People T-shirt",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 5:43:58 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 5:44:03 pm",
+        "prod_name": "Mango People T-shirt",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 5:44:12 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 5:44:14 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 5:44:15 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 5:44:17 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 5:44:22 pm",
+        "prod_name": "Мышка",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 5:46:27 pm",
+        "prod_name": "Mango People T-shirt",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 5:46:55 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 5:46:55 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 5:46:56 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 5:46:58 pm",
+        "prod_name": "Mango People T-shirt 2",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 5:55:49 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 5:55:50 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 5:55:53 pm",
+        "prod_name": "Mango People T-shirt 1",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 5:55:58 pm",
+        "prod_name": "Mango People T-shirt 3",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 5:56:03 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 5:57:19 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 5:57:20 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 5:57:21 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:09:02 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:09:07 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:10:00 pm",
+        "prod_name": "Mango People T-shirt 5",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:10:22 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:10:36 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:10:37 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:10:38 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:10:38 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:10:39 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:10:44 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:16:46 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:17:30 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:19:06 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:19:39 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:19:56 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:20:08 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:20:09 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:20:10 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:20:10 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:20:11 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:20:12 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:20:29 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:21:09 pm",
+        "prod_name": "Mango People T-shirt 5",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:21:12 pm",
+        "prod_name": "Mango People T-shirt 4",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:21:18 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:21:20 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:21:28 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:21:29 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:21:29 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:21:30 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:21:30 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:21:31 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:21:33 pm",
+        "prod_name": "Mango People T-shirt 1",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:26:07 pm",
+        "prod_name": "Mango People T-shirt 5",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:26:20 pm",
+        "prod_name": "Mango People T-shirt 4",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:26:31 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:26:31 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:26:34 pm",
+        "prod_name": "Mango People T-shirt 6",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:27:35 pm",
+        "prod_name": "Mango People T-shirt 9",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:27:40 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:27:41 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:27:45 pm",
+        "prod_name": "Mango People T-shirt 5",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:28:03 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:28:06 pm",
+        "prod_name": "Mango People T-shirt 4",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:28:59 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:29:00 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:29:00 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:29:03 pm",
+        "prod_name": "Mango People T-shirt 5",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:29:06 pm",
+        "prod_name": "Mango People T-shirt 4",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:29:09 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:29:49 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:29:55 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:29:55 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:29:57 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:29:59 pm",
+        "prod_name": "Mango People T-shirt 6",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:30:07 pm",
+        "prod_name": "Mango People T-shirt 4",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:30:22 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:30:23 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:30:23 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:30:23 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:30:24 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:30:34 pm",
+        "prod_name": "Mango People T-shirt 1",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:30:36 pm",
+        "prod_name": "Mango People T-shirt 2",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:31:04 pm",
+        "prod_name": "Mango People T-shirt 3",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:31:32 pm",
+        "prod_name": "Mango People T-shirt 8",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:31:43 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:31:44 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:31:51 pm",
+        "prod_name": "Mango People T-shirt 6",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:37:59 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:38:01 pm",
+        "prod_name": "Mango People T-shirt 3",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:39:23 pm",
+        "prod_name": "Mango People T-shirt 7",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:41:09 pm",
+        "prod_name": "Mango People T-shirt 4",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:43:14 pm",
+        "prod_name": "Mango People T-shirt 8",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:44:17 pm",
+        "prod_name": "Mango People T-shirt 5",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:44:40 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:44:41 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:44:42 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:44:42 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:44:42 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:44:42 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:44:49 pm",
+        "prod_name": "Mango People T-shirt 3",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:44:52 pm",
+        "prod_name": "Mango People T-shirt 2",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:44:55 pm",
+        "prod_name": "Mango People T-shirt 5",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:45:08 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:45:08 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 6:45:42 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:45:47 pm",
+        "prod_name": "Mango People T-shirt 5",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:49:20 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:50:46 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:52:23 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:52:24 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:52:25 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:52:51 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:54:47 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:55:06 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:55:43 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:56:23 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 6:59:10 pm",
+        "prod_name": "Mango People T-shirt 8",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 6:59:18 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:01:40 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:01:50 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:01:53 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:02:12 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:02:17 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:02:25 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:03:13 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:03:25 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 7:03:27 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:03:28 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:03:49 pm",
+        "prod_name": "Mango People T-shirt 6",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 7:04:01 pm",
+        "prod_name": "Mango People T-shirt 9",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 7:04:04 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 7:04:05 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 7:04:05 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 7:04:06 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:04:06 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:04:07 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:04:07 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:04:07 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:04:21 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:04:50 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:05:11 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:06:55 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:06:57 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:07:04 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:07:04 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 7:07:05 pm",
+        "action": "remove"
+    },
+    {
+        "time": "15 Mar 2020, 7:07:30 pm",
+        "prod_name": "Mango People T-shirt 3",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 7:07:34 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:07:35 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:07:38 pm",
+        "prod_name": "Mango People T-shirt 6",
+        "action": "add"
+    },
+    {
+        "time": "15 Mar 2020, 7:07:44 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:07:46 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:07:47 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 7:07:48 pm",
+        "action": "change"
+    },
+    {
+        "time": "15 Mar 2020, 8:01:04 pm",
+        "prod_name": "Mango People T-shirt 2",
+        "action": "add"
+    },
+    {
+        "time": "18 Apr 2020, 8:14:15 pm",
+        "action": "change"
+    },
+    {
+        "time": "18 Apr 2020, 8:16:02 pm",
+        "action": "change"
+    },
+    {
+        "time": "18 Apr 2020, 8:16:12 pm",
+        "action": "change"
+    },
+    {
+        "time": "18 Apr 2020, 8:16:18 pm",
+        "action": "change"
+    },
+    {
+        "time": "18 Apr 2020, 8:16:19 pm",
+        "action": "change"
+    },
+    {
+        "time": "18 Apr 2020, 8:16:19 pm",
+        "action": "change"
+    },
+    {
+        "time": "18 Apr 2020, 8:16:20 pm",
+        "action": "change"
+    },
+    {
+        "time": "18 Apr 2020, 8:16:20 pm",
+        "action": "change"
+    }
+]
